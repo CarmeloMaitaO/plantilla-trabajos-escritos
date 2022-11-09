@@ -1,0 +1,3 @@
+[submodule "src/dependencias/formatos-institutos-educativos-venezolanos"]
+	path = src/dependencias/formatos-institutos-educativos-venezolanos
+	url = https://github.com/CarmeloMaitaO/formatos-institutos-educativos-venezolanos.git

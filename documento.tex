@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage{formatos-institutos-educativos-venezolanos}
+
+\logo{<ruta/al/logo>}
+\instituto{
+República Bolivariana de Venezuela\\
+Ministerio del Poder Popular para la Educación\\
+Instituto Universitario de Tecnología Antonio José de Sucre\\
+Extensión <tu extensión>
+}
+\titulo{
+<tu título>
+}
+\fecha{
+Valencia, <mes>, <año>
+}
+\alumno{
+{\bfseries Autor (a):} <autor>\\
+{\bfseries Tutor (a):} <tutor>
+}
+\begin{document}
+	\Preliminares
+	\import{src/introduccion}{introduccion.tex}
+	\import{src/desarrollo}{desarrollo.tex}
+	\import{src/conclusion}{conclusion.tex}
+	\printbibliography[title={BIBLIOGRAFÍA}]
+	\import{src/anexos}{anexos.tex}
+\end{document}
