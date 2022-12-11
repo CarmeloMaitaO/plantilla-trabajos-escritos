@@ -7,6 +7,7 @@ target=$(src)/target
 $(target)/documento.pdf: formatos-institutos-venezolanos.sty
 	latexmk -pdflua -f -outdir=$(target) documento.tex
 formatos-institutos-venezolanos.sty:
+	git submodule update --init
 	git submodule update --remote
 	ln -sf $(dependenciaFormato)
 limpiar:
