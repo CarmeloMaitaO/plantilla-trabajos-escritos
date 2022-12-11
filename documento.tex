@@ -1,28 +1,26 @@
-\documentclass[12pt]{article}
-\usepackage{formatos-institutos-educativos-venezolanos}
+\documentclass[12pt]{report}
+\usepackage[trabajos-escritos]{formatos-institutos-venezolanos}
 
-\logo{<ruta/al/logo>}
-\instituto{
-República Bolivariana de Venezuela\\
-Ministerio del Poder Popular para la Educación\\
-Instituto Universitario de Tecnología Antonio José de Sucre\\
-Extensión <tu extensión>
-}
-\titulo{
-<tu título>
-}
-\fecha{
-Valencia, <mes>, <año>
-}
-\alumno{
-{\bfseries Autor (a):} <autor>\\
-{\bfseries Tutor (a):} <tutor>
-}
+\estudiante{}	% Nombre del estudiante
+\estudianteCedula{}	% Cédula del estudiante
+\estudianteCarrera{}	% Carrera que el estudiante cursa
+\estudianteCodigoCarrera{}	% Código de la carrera que el estudiante cursa
+\profesor{}	% Nombre del profesor de la asignatura
+\profesorTitulo{}	% Título (universitario) del profesor de la asignatura
+\instituto{}	% Nombre del instituto
+\extension{}	% Extensión del instituto (ciudad o nombre propio)
+\logo{}	% Ruta al archivo del logo (por ejemplo: /home/felipe/logo.png)
+\mes{}	% Mes en el que se publica el trabajo
+\ano{}	% Año en el que se publica el trabajo
+\asignatura{}	% Nombre de la asignatura cursada
+\titulo{}	% Título del trabajo escrito (por ejemplo: los limones)
+\ciudad{}	% Nombre de la ciudad donde se publica el trabajo
 \begin{document}
-	\Preliminares
+	\Portada
+	\Indice
 	\import{src/introduccion}{introduccion.tex}
 	\import{src/desarrollo}{desarrollo.tex}
 	\import{src/conclusion}{conclusion.tex}
-	\printbibliography[title={BIBLIOGRAFÍA}]
+	\Bibliografia
 	\import{src/anexos}{anexos.tex}
 \end{document}
